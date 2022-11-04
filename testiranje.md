@@ -28,29 +28,34 @@ These are the elements outlined in John Gruber’s original design document. All
 
 > blockquote
 
+
 ### Lists
 
 * Here is a bullet point
 * Here is another bullet point; it has sub-points:
   * subpoint 1
+    * another
+    * another
   * subpoint 2
   * subpoint 3
-
 but then continues with the original bullet point
-
 * and here's one more point just to drive it home
+
 1. First ordered list item
 1. Another item
- * Unordered sub-list. 
+
+  * Unordered sub-list. 
+
 1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
+   1. Ordered sub-list
+   1. Next
 1. And another item.
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+   To have a line break without a paragraph, you will need to use two trailing spaces  
+   Note that this line is separate, but within the same paragraph.
+(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
 * Unordered list can use asterisks
 - Or minuses
@@ -90,28 +95,36 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 ### Table
 
+Align cell data using colon symbol
+
+header and cell data can be aligned to the left or right of columns in a table The below example explains about alignment
+
+    Content to align left by prefix colon : before dashes - :---
+    Right align by suffix colon : after dashes - ---:
+    Centre align by prefix and suffix colon : for dashes - :---:
+
 | Syntax | Description |
-| ----------- | ----------- |
+|--- | :---: |
 | Header | Title |
 | Paragraph | Text |
 
-<div style="margin-left: auto;
-            margin-right: auto;
-            width: 50%">
 
-| Item         | Price | # In stock |
-|--------------|:-----:|-----------:|
-| Juicy Apples |  1.99 |        739 |
-| Bananas      |  1.89 |          6 |
-
-</div>
-
-| Name   | Age |
-| ------ | --- |
+| <div style="width:290px">Name</div>   | <div style="width:290px">Age</div> |
+| ------ | :---: |
 | Kealan | 25  |
 | Jake   | 28  |
 
 ### Fenced Code Block
+
+```bash
+ls -alf
+```
+
+```yml
+networks:
+  default:
+    name: influx
+```
 
 ```
 {
