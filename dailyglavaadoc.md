@@ -1,2 +1,0 @@
-# Daily/glava.adoc
-
