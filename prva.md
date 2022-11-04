@@ -2,6 +2,6 @@
 
 malo linkov na [[testiranje]], potem gremo na [[delo]]
 
-Pisati moramo [[Dokumentacijo]] 
+Napisati moramo [[Dokument]] 
 
 
