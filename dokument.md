@@ -25,9 +25,9 @@
 
 
 | Table | Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| ----------- | ----------- | ----------- |
+| Header | Title | Primer |
+| Paragraph | Text | Text |
 
 Fenced Code Block
 
