@@ -23,12 +23,8 @@
 |Link | [title](https://www.example.com) |
 |Image | ![alt text](image.jpg) |
 
-| Element | Syntax |
-| ----------- | ----------- |
 
-
-
-Table 	| Syntax | Description |
+| Table | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
